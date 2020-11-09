@@ -1,14 +1,14 @@
 # Python Modules
 
-## Python Library and Built in Functions
+1. Python Library and Built in Functions
 
-### What is pip and how do we use it
+1. What is pip and how do we use it
 
-### APIs with python
+1. APIs with python
 
-### Built in functions help us accelerate our development of software
+1. Built in functions help us accelerate our development of software
 
-#### Task
+- Task
 ```
 - get user input of a float number
 - check if the number is lower than .50 then round the figure to lower end
