@@ -12,7 +12,7 @@
 Modules (also called libraries)
 Your code starts to get more complex with lots of functions and variables.
 To make it easier to organize the code we use Modules.
-
+```
 import math
 math.sqrt(729) —> 27
 
@@ -22,7 +22,7 @@ m.sqrt(16) —> 4
 (specify exactly what to import instead of whole module)
 from math import sqrt 
 sqrt(121) —> 11
-=======
+```
 - How can we create a customised method and utilise the built in functionality at the same time
 
 - When and why should we do that
