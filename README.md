@@ -2,13 +2,13 @@
 
 1. Python Library and Built in Functions
 
-1. What is pip and how do we use it
+2. What is pip and how do we use it
 
-1. APIs with python
+3. APIs with python
 
-1. Built in functions help us accelerate our development of software
+4. Built in functions help us accelerate our development of software
 
-- Task
+### Task
 ```
 - get user input of a float number
 - check if the number is lower than .50 then round the figure to lower end
@@ -25,7 +25,7 @@ else:
     user_inp_ceil = ceil(user_inp)
 ```
 
-- ALTERNATIVE METHOD
+#### ALTERNATIVE METHOD
 ```
     if number % 1 < 0.5:
         print(math.floor(number))
