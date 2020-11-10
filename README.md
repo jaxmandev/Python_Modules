@@ -46,12 +46,10 @@ Package manager for Python and helps us install external packages such as reques
 ```
 syntax: pip install name_of_the_package pip install requests
 ```
-### 3rd Iteration
-
+- 3rd Iteration
 - What does requests module bring to the table
 ```
 import requests
->>>>>>> 8dd1c8d8db28cb87f52de9c986765aa557a365b2
 
 from emoji import emojize
 
@@ -71,3 +69,86 @@ check_response_code()
 ```
 - NOTE
 It will evaluate to True if the status code was between 200-400, otherwise False
+
+## API Testing
+- Postman
+```
+import requests
+
+live_response = requests.get("http://api.postcodes.io/postcodes/e147le")
+
+#argument = str(input(" please enter you postcode "))
+
+#url_target = live_response + argument
+print(live_response.content)
+
+# research how to convert this data into dictionary
+# HINT - python json library/module/method can be used to resolve this
+
+# iterate through the data and print RESULTS
+# print longitude and latitude (locations)
+# Create a function that returns the longitude and latitude of the given postcode
+
+
+#print(live_response.status_code)
+
+# def check_response_code():
+#     pass
+```
+
+## JSON Basics
+
+- Java script object notation
+- use cases x browser data
+- data is in key value pairs
+- Json encoding from a dictionary
+- Json decoding into a dictionary
+- handling/creating files with python
+- writing to a file
+- reading from a file
+
+#### Handling files and permissions
+
+open(file, mode)
+
+Mode	Description
+'r'	This is the default mode. It Opens file for reading.
+'w'	This Mode Opens file for writing. If file does not exist, it creates a new file. If file exists it truncates the file.
+'x'	Creates a new file. If file already exists, the operation fails.
+'a'	Open file in append mode. If file does not exist, it creates a new file.
+'t'	This is the default mode. It opens in text mode.
+'b'	This opens in binary mode.
+'+'	This will open a file for reading and writing (updating)
+
+#### Exception handling
+```
+try & except blocks
+rasie & finally
+Use cases
+```
+1. we use these blocks when we expect an error or an exception from python interpreter
+
+2. why - this helps us handle the errors or exception and add customised message as well as make a decision based on the customer needs
+
+3. we will create a variable to store a file data using open() Iteration 1
+```
+try: # let's use try block for a 1 line of code where we know this will throw an error
+    file = open("orders.text")
+except:
+    print(" Panic Alert!!!! ")
+```
+
+#### Iteration 2 using 
+- raise and 
+- finally
+```
+try:
+    file = open("orders.text")
+except FileNotFoundError as errmsg: # creating an alais for FileNotFound Error in except block
+    print("Alert something sent wrong" + str(errmsg))
+# if we still wanted them to see the actual exception together with our customised message
+    raise # raise will send back the actual exception
+
+finally: # finally will execute regardless of the above conditions
+    print(" Hope you had a good Customer experience, please visit again")
+```
