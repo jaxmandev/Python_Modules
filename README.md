@@ -132,7 +132,9 @@ Use cases
 
 2. why - this helps us handle the errors or exception and add customised message as well as make a decision based on the customer needs
 
-3. we will create a variable to store a file data using open() Iteration 1
+3. we will create a variable to store a file data using open() 
+
+#### Iteration 1
 ```
 try: # let's use try block for a 1 line of code where we know this will throw an error
     file = open("orders.text")
