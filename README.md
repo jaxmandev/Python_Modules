@@ -126,8 +126,8 @@ Mode	Description
 ```
 try & except blocks
 rasie & finally
-Use cases
 ```
+Use cases
 1. we use these blocks when we expect an error or an exception from python interpreter
 
 2. why - this helps us handle the errors or exception and add customised message as well as make a decision based on the customer needs
