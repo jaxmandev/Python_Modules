@@ -7,11 +7,13 @@
 3. APIs with Python
 
 4. Built in functions help us accelerate our development of software
+- How can we create a customised method and utilise the built in functionality at the same time
+- When and why should we do that
 
-<<<<<<< HEAD
-Modules (also called libraries)
+Creating a customised method to add required information and use the functionality provided by sys module
+- Modules (also called libraries)
 Your code starts to get more complex with lots of functions and variables.
-To make it easier to organize the code we use Modules.
+#### To make it easier to organize the code we use Modules.
 ```
 import math
 math.sqrt(729) —> 27
@@ -97,7 +99,7 @@ print(live_response.content)
 ```
 
 ## JSON Basics
-
+```
 - Java script object notation
 - use cases x browser data
 - data is in key value pairs
@@ -106,9 +108,9 @@ print(live_response.content)
 - handling/creating files with python
 - writing to a file
 - reading from a file
-
+```
 #### Handling files and permissions
-
+```
 open(file, mode)
 
 Mode	Description
@@ -119,7 +121,7 @@ Mode	Description
 't'	This is the default mode. It opens in text mode.
 'b'	This opens in binary mode.
 '+'	This will open a file for reading and writing (updating)
-
+```
 #### Exception handling
 ```
 try & except blocks
